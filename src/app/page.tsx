@@ -4,6 +4,7 @@ import { Mail, Linkedin, FileText } from 'lucide-react';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 import Experience from '@/components/ui/sections/Experience';
+import Skills from '@/components/ui/sections/Skills';
 
 export default function Home() {
   return (
@@ -70,11 +71,9 @@ export default function Home() {
           </a>
         </div>
 
-        <Experience />
-
         <h2 className='text-2xl font-semibold mb-4'>Recent Projects</h2>
 
-        <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6'>
+        <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mb-12'>
           <div className='bg-neutral-900 rounded-lg p-4 h-64 flex items-center justify-center text-neutral-500'>
             Project 1
           </div>
@@ -85,6 +84,13 @@ export default function Home() {
             Project 3
           </div>
         </div>
+
+        <Experience />
+
+        <div className='border-t border-neutral-800 my-12' />
+
+        <Skills />
+        
       </section>
     </main>
   );
