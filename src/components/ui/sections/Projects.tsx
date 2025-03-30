@@ -51,9 +51,9 @@ export default function Projects() {
               <h3 className='text-lg font-semibold text-white'>
                 {project.title}
               </h3>
-              <p className='text-sm text-neutral-400'>{project.description}</p>
+              <p className='text-base text-neutral-400'>{project.description}</p>
 
-              <div className='flex flex-wrap gap-2 text-xs text-neutral-400'>
+              <div className='flex flex-wrap gap-2 text-sm text-neutral-400'>
                 {project.tech.map((tech, i) => (
                   <span
                     key={i}
@@ -69,7 +69,7 @@ export default function Projects() {
                   href={project.live}
                   target='_blank'
                   rel='noopener noreferrer'
-                  className='text-sm text-blue-400 hover:underline inline-flex items-center gap-1'
+                  className='text-base text-blue-400 hover:underline inline-flex items-center gap-1'
                 >
                   <ExternalLink size={14} /> Live
                 </a>
@@ -77,7 +77,7 @@ export default function Projects() {
                   href={project.repo}
                   target='_blank'
                   rel='noopener noreferrer'
-                  className='text-sm text-neutral-400 hover:text-white inline-flex items-center gap-1'
+                  className='text-base text-neutral-400 hover:text-white inline-flex items-center gap-1'
                 >
                   <Github size={14} /> Code
                 </a>

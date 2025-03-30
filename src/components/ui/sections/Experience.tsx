@@ -21,7 +21,7 @@ export default function Experience() {
       <div className='grid grid-cols-1 md:grid-cols-3 gap-6'>
         {experience.map((exp, i) => (
           <div key={i} className='space-y-3'>
-            <p className='text-base uppercase tracking-widest text-neutral-400'>
+            <p className='text-lg uppercase tracking-widest text-neutral-400'>
               {exp.from} - {exp.to}
             </p>
             <div className='flex items-center gap-4'>
@@ -34,8 +34,8 @@ export default function Experience() {
                 />
               </div>
               <div>
-                <h3 className='text-sm font-medium text-white'>{exp.role}</h3>
-                <p className='text-sm text-neutral-400'>{exp.company}</p>
+                <h3 className='text-base font-medium text-white'>{exp.role}</h3>
+                <p className='text-base text-neutral-400'>{exp.company}</p>
               </div>
             </div>
           </div>

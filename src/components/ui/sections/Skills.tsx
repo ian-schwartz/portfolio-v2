@@ -112,8 +112,8 @@ export default function Skills() {
               <skill.icon size={16} className='stroke-current' />
             </div>
             <div>
-              <h3 className='text-sm font-medium text-white'>{skill.name}</h3>
-              <p className='text-sm text-neutral-400'>{skill.category}</p>
+              <h3 className='text-base font-medium text-white'>{skill.name}</h3>
+              <p className='text-base text-neutral-400'>{skill.category}</p>
             </div>
           </div>
         ))}
