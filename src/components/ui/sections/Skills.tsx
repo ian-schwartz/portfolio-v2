@@ -14,12 +14,9 @@ import {
   TerminalSquare,
   Share2,
   Database,
-  Github,
   Globe,
-  FileText,
   GitBranch,
   ChevronRightCircle,
-  BadgeCheck,
 } from 'lucide-react';
 
 const skills = [

@@ -1,8 +1,4 @@
 'use client';
-import { Button } from '@/components/ui/button';
-import { Mail, Linkedin, FileText } from 'lucide-react';
-import { motion } from 'framer-motion';
-import Image from 'next/image';
 import Intro from '@/components/ui/sections/Intro';
 import Projects from '@/components/ui/sections/Projects';
 import Divider from '@/components/ui/Divider';
