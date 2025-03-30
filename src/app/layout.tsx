@@ -17,12 +17,12 @@ export const metadata: Metadata = {
   title: 'Ian Schwartz | Web Developer',
   description:
     'Full stack web developer portfolio showcasing modern projects, skills, and experience.',
-  metadataBase: new URL('https://your-vercel-url.vercel.app'), // update post-deploy
+  metadataBase: new URL('https://ian.schwartz.dev'),
   openGraph: {
     title: 'Ian Schwartz | Web Developer',
     description: 'Explore recent projects, skills, and experience.',
     type: 'website',
-    url: 'https://your-vercel-url.vercel.app',
+    url: 'https://ianschwartz.dev',
     images: [
       {
         url: '/images/og-image.png',
