@@ -26,7 +26,8 @@ export default function Intro() {
       <p className='text-xl text-neutral-400 max-w-xl mb-6'>
         Focused on building responsive, user-friendly sites that look great and
         work even better. This portfolio was built with React, Next.js, and
-        Tailwind. Feel free to reach out if you'd like to chat or collaborate.
+        Tailwind. Feel free to reach out if you&apos;d like to chat or
+        collaborate.
       </p>
 
       <div className='flex gap-4 mb-12'>
