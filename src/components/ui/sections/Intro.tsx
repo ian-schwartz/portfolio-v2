@@ -59,7 +59,7 @@ export default function Intro() {
           </Button>
         </a>
 
-        <a href='/resume.pdf' target='_blank' rel='noopener noreferrer'>
+        <a href='/Resume.pdf' target='_blank' rel='noopener noreferrer'>
           <Button
             variant='ghost'
             className='text-base text-neutral-300 hover:text-white border border-neutral-700 bg-transparent hover:bg-neutral-900 rounded-full px-5 py-2.5 transition gap-2 cursor-pointer'
