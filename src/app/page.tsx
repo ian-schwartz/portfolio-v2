@@ -5,6 +5,7 @@ import { motion } from 'framer-motion';
 import Image from 'next/image';
 import Experience from '@/components/ui/sections/Experience';
 import Skills from '@/components/ui/sections/Skills';
+import Projects from '@/components/ui/sections/Projects';
 
 export default function Home() {
   return (
@@ -38,10 +39,10 @@ export default function Home() {
             rel='noopener noreferrer'
           >
             <Button
-              variant='outline'
-              className='text-neutral-900 hover:text-white border-neutral-700 hover:bg-neutral-900 cursor-pointer gap-2'
+              variant='ghost'
+              className='text-neutral-300 hover:text-white border border-neutral-700 bg-transparent hover:bg-neutral-900 rounded-full px-5 py-2.5 transition gap-2 cursor-pointer'
             >
-              <Mail size={16} className='stroke-current"' />
+              <Mail size={16} className='stroke-current' />
               Email
             </Button>
           </a>
@@ -52,8 +53,8 @@ export default function Home() {
             rel='noopener noreferrer'
           >
             <Button
-              variant='outline'
-              className='text-neutral-900 hover:text-white border-neutral-700 hover:bg-neutral-900 cursor-pointer gap-2'
+              variant='ghost'
+              className='text-neutral-300 hover:text-white border border-neutral-700 bg-transparent hover:bg-neutral-900 rounded-full px-5 py-2.5 transition gap-2 cursor-pointer'
             >
               <Linkedin size={16} className='stroke-current' />
               LinkedIn
@@ -62,8 +63,8 @@ export default function Home() {
 
           <a href='/resume.pdf' target='_blank' rel='noopener noreferrer'>
             <Button
-              variant='outline'
-              className='text-neutral-900 hover:text-white border-neutral-700 hover:bg-neutral-900 cursor-pointer gap-2'
+              variant='ghost'
+              className='text-neutral-300 hover:text-white border border-neutral-700 bg-transparent hover:bg-neutral-900 rounded-full px-5 py-2.5 transition gap-2 cursor-pointer'
             >
               <FileText size={16} className='stroke-current' />
               Resume
@@ -71,26 +72,13 @@ export default function Home() {
           </a>
         </div>
 
-        <h2 className='text-2xl font-semibold mb-4'>Recent Projects</h2>
-
-        <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mb-12'>
-          <div className='bg-neutral-900 rounded-lg p-4 h-64 flex items-center justify-center text-neutral-500'>
-            Project 1
-          </div>
-          <div className='bg-neutral-900 rounded-lg p-4 h-64 flex items-center justify-center text-neutral-500'>
-            Project 2
-          </div>
-          <div className='bg-neutral-900 rounded-lg p-4 h-64 flex items-center justify-center text-neutral-500'>
-            Project 3
-          </div>
-        </div>
+        <Projects />
 
         <Experience />
 
         <div className='border-t border-neutral-800 my-12' />
 
         <Skills />
-        
       </section>
     </main>
   );

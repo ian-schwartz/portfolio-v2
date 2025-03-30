@@ -1,35 +1,102 @@
 'use client';
 
-import { Wrench, Code, Monitor, Cpu } from 'lucide-react';
+import {
+  Code2,
+  Braces,
+  FileCode,
+  Atom,
+  RefreshCw,
+  Server,
+  Layers,
+  Wind,
+  Paintbrush,
+  Codepen,
+  TerminalSquare,
+  Share2,
+  Database,
+  Github,
+  Globe,
+  FileText,
+  GitBranch,
+  ChevronRightCircle,
+  BadgeCheck,
+} from 'lucide-react';
 
 const skills = [
-  { name: 'HTML', category: 'Frontend', color: 'bg-pink-500' },
-  { name: 'CSS', category: 'Styling', color: 'bg-teal-500' },
+  { name: 'HTML', category: 'Frontend', color: 'bg-pink-500', icon: FileCode },
+  { name: 'CSS', category: 'Styling', color: 'bg-teal-500', icon: Paintbrush },
   {
     name: 'JavaScript',
     category: 'Language',
     color: 'bg-yellow-400 text-black',
+    icon: Code2,
   },
-  { name: 'TypeScript', category: 'Language', color: 'bg-blue-500' },
-  { name: 'React', category: 'Frontend', color: 'bg-sky-500' },
-  { name: 'Redux', category: 'State Management', color: 'bg-red-500' },
+  {
+    name: 'TypeScript',
+    category: 'Language',
+    color: 'bg-blue-500',
+    icon: Braces,
+  },
+  { name: 'React', category: 'Frontend', color: 'bg-sky-500', icon: Atom },
+  {
+    name: 'Redux',
+    category: 'State Management',
+    color: 'bg-red-500',
+    icon: RefreshCw,
+  },
   {
     name: 'Next.js',
     category: 'Framework',
     color: 'bg-neutral-200 text-black',
+    icon: Layers,
   },
-  { name: 'Tailwind CSS', category: 'Styling', color: 'bg-cyan-400' },
-  { name: 'SASS', category: 'Styling', color: 'bg-pink-400' },
-  { name: 'LESS', category: 'Styling', color: 'bg-cyan-600' },
-  { name: 'Node.js', category: 'Backend', color: 'bg-blue-600' },
-  { name: 'Express', category: 'Backend', color: 'bg-blue-700' },
-  { name: 'REST', category: 'API Design', color: 'bg-purple-500' },
-  { name: 'GraphQL', category: 'API Design', color: 'bg-purple-600' },
-  { name: 'SQL', category: 'Database', color: 'bg-emerald-600' },
-  { name: 'Python', category: 'Language', color: 'bg-indigo-600' },
-  { name: 'Git', category: 'Version Control', color: 'bg-orange-500' },
-  { name: 'WordPress', category: 'CMS', color: 'bg-slate-600' },
-  { name: 'PHP', category: 'Backend', color: 'bg-blue-700' },
+  {
+    name: 'Tailwind CSS',
+    category: 'Styling',
+    color: 'bg-cyan-400',
+    icon: Wind,
+  },
+  { name: 'SASS', category: 'Styling', color: 'bg-pink-400', icon: Codepen },
+  { name: 'LESS', category: 'Styling', color: 'bg-cyan-600', icon: Codepen },
+  { name: 'Node.js', category: 'Backend', color: 'bg-blue-600', icon: Server },
+  {
+    name: 'Express',
+    category: 'Backend',
+    color: 'bg-blue-700',
+    icon: TerminalSquare,
+  },
+  {
+    name: 'REST',
+    category: 'API Design',
+    color: 'bg-purple-500',
+    icon: ChevronRightCircle,
+  },
+  {
+    name: 'GraphQL',
+    category: 'API Design',
+    color: 'bg-purple-600',
+    icon: Share2,
+  },
+  {
+    name: 'SQL',
+    category: 'Database',
+    color: 'bg-emerald-600',
+    icon: Database,
+  },
+  { name: 'Python', category: 'Language', color: 'bg-indigo-600', icon: Code2 },
+  {
+    name: 'Git',
+    category: 'Version Control',
+    color: 'bg-orange-500',
+    icon: GitBranch,
+  },
+  { name: 'WordPress', category: 'CMS', color: 'bg-slate-600', icon: Globe },
+  {
+    name: 'PHP',
+    category: 'Backend',
+    color: 'bg-blue-700',
+    icon: TerminalSquare,
+  },
 ];
 
 export default function Skills() {
@@ -42,7 +109,7 @@ export default function Skills() {
             <div
               className={`w-10 h-10 rounded-md flex items-center justify-center ${skill.color}`}
             >
-              <Wrench size={16} className='text-white' />
+              <skill.icon size={16} className='stroke-current' />
             </div>
             <div>
               <h3 className='text-sm font-medium text-white'>{skill.name}</h3>
