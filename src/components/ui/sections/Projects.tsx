@@ -26,9 +26,9 @@ const projects = [
 
 export default function Projects() {
   return (
-    <section className='mb-24'>
+    <section className='mb-12'>
       <h2 className='text-2xl font-semibold text-white mb-1'>Projects</h2>
-      <p className='text-base text-neutral-500 mb-8'>
+      <p className='text-xl text-neutral-400 mb-8'>
         A couple of the apps I’ve built recently.
       </p>
 

@@ -13,7 +13,7 @@ export default function Home() {
       <section className='max-w-6xl mx-auto px-4'>
         <div className='flex items-start gap-6 mb-8'>
           <Image
-            src='/avatar.jpg'
+            src='/images/ian-avatar.jpeg'
             alt='Avatar'
             width={64}
             height={64}
@@ -21,7 +21,7 @@ export default function Home() {
           />
           <div>
             <h1 className='text-4xl font-semibold'>Ian Schwartz</h1>
-            <p className='text-2xl text-neutral-400'>
+            <p className='text-xl md:text-2xl text-neutral-400'>
               Full Stack Web Developer
             </p>
           </div>
@@ -29,7 +29,7 @@ export default function Home() {
 
         <p className='text-xl text-neutral-400 max-w-xl mb-6'>
           Focused on building responsive, user-friendly sites that look great
-          and work even better.
+          and work even better. This portfolio was built with React, Next.js, and Tailwind. Feel free to reach out if you'd like to chat or collaborate.
         </p>
 
         <div className='flex gap-4 mb-12'>
@@ -73,6 +73,8 @@ export default function Home() {
         </div>
 
         <Projects />
+
+        <div className='border-t border-neutral-800 my-12' />
 
         <Experience />
 

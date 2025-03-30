@@ -21,11 +21,11 @@ export default function Experience() {
       <div className='grid grid-cols-1 md:grid-cols-3 gap-6'>
         {experience.map((exp, i) => (
           <div key={i} className='space-y-3'>
-            <p className='text-base uppercase tracking-widest text-neutral-500'>
+            <p className='text-base uppercase tracking-widest text-neutral-400'>
               {exp.from} - {exp.to}
             </p>
             <div className='flex items-center gap-4'>
-              <div className='w-10 h-10 relative'>
+              <div className='w-12 h-12 relative'>
                 <Image
                   src={exp.logo}
                   alt={`${exp.company} logo`}
