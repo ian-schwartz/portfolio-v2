@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   title: 'Ian Schwartz | Web Developer',
   description:
     'Full stack web developer portfolio showcasing modern projects, skills, and experience.',
-  metadataBase: new URL('https://ian.schwartz.dev'),
+  metadataBase: new URL('https://ianschwartz.dev'),
   openGraph: {
     title: 'Ian Schwartz | Web Developer',
     description: 'Explore recent projects, skills, and experience.',
