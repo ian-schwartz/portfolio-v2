@@ -46,7 +46,7 @@ export default function Intro() {
         </a>
 
         <a
-          href='https://www.linkedin.com/in/ian-schwartz-277bb857'
+          href='https://www.linkedin.com/in/ianschwartz1'
           target='_blank'
           rel='noopener noreferrer'
         >
